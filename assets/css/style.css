@@ -6,6 +6,67 @@ h3{
   font-weight: bolder;
   color: white;
 }
+.about11{
+  height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.experience-tag {
+  
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  background: lightcoral !important;
+  padding: 0px 1px;
+  z-index: 9;
+  position: relative;
+  margin-top: 30px;
+}
+.tag-inner {
+  -webkit-clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  border: 1px solid rgb(230, 0, 76)(--primary-color1);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 7px 25px;
+  background-color: var(--white);
+}
+img, svg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.tag-inner img, .tag-inner svg {
+  margin-right: 10px;
+}
+.tag-inner h5 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-color1);
+  font-family: "Cuprum", sans-serif;
+  margin-bottom: 0;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.about-images .about12 img {
+  border-radius: 0px 100px 100px 0px;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+.about-images .about13 img {
+  margin-left: -20%;
+  max-width: 120%;
+}
+.sun-icon {
+  position: absolute;
+  left: -95px;
+  bottom: -30px;
+}
 #navbar button span a{
  text-decoration: none;
  color: white;
@@ -230,25 +291,6 @@ padding: 10px;
 .points p{
   font-size: 16px;
   color: rgb(69, 60, 60);
-}
-.about13{
-  position: absolute;
-  top: 150px;
-  right: 69px;
-}
-.experience-tag{
-  position: absolute;
-  top: 1070px;
-  z-index: 1;
-  border: 2px solid darkred;
-  right: 410px;
-  background-color: white;
-  color: darkred;
-  transform: skew(-30deg);
-  padding: 3px;
-}
-.positive{
-  transform: skew(30deg);
 }
 .Testimonal span{
   margin: auto;
@@ -795,7 +837,7 @@ color: rgb(230, 0, 76);
      color: #18212e;
   }
   #milestone{
-    height: 1100px;
+    height: 1100px !important;
   }
   .yes{
     margin: auto;
@@ -803,39 +845,7 @@ color: rgb(230, 0, 76);
   .points{
     margin: auto;
   }
-  .about11{
-    position: relative;
-    width: 500px;
-  }
-  .about12 img{
-    position: relative;
-    width: 500px;
-  }
-  .about13 img{
-    position: relative;
-    top: 98px;
-    width: 500px;
-    left: 55px;
-  }
-  .experience-tag{
-    position: absolute;
-        margin-top: 100px;
-        left: 100px;
-        margin-bottom: 200px !important;
-        width: 25px;
-        padding-right: 185px;
-        padding-bottom: 11px;
-        padding-left: 100px;
-        background-color: lightgrey;
-  }
-  .positive{
-    height: 25px;
-    font-size: 20px;
-
-  }
-  .Testimonal{
-    margin-top: 500px;
-  }
+ 
   .Testimonal span{
   max-width: 45%;
   }
@@ -845,25 +855,25 @@ color: rgb(230, 0, 76);
   color: rgb(20, 18, 18);
   }
   .Videos span{
-    max-width: 40%;
+    max-width: 60% !important;
   }
   .Videos h3{
     font-size: 25px;
   }
   .last span{
-    max-width: 40%;
+    max-width: 60% !important;
   }
   .last h3{
     font-size: 25px;
   }
+  #testi{
+    margin-top: 50px;
+  }
 }
 @media screen and (max-width: 500px) {
-.img-fluid {
-  max-width: 80% !important;
-  height: auto !important;
-}
-.Testimonal{
-  margin-top: 600px;
+
+#testi{
+  margin-top: 50px;
 }
 #milestone{
   height: 1200px !important;
@@ -874,7 +884,6 @@ color: rgb(230, 0, 76);
   .Testimonal h3{
     font-size: 30px;
     text-align: center;
-   
   }
   .Videos span{
     max-width: 55%;
@@ -890,36 +899,19 @@ color: rgb(230, 0, 76);
     font-size: 30px;
     text-align: center;
   }
-  .about11 img{
-    position: relative;
-    background-size: cover;
-  }
-  .about12 img{
-    position: relative;
-    width: 477px;
-  }
-  .about13 img{
-    position: relative;
-    bottom: 37px;
-    width: 485px;
-    left: 60px;
-  }
-  .experience-tag{
-    position: absolute;
-        margin-top: 100px;
-        left: 35px;
-        margin-bottom: 200px;
-        width: 25px;
-        padding-right: 185px;
-        padding-bottom: 110px;
-        padding-left: 100px;
-        background-color: lightgrey;
-  }
-  .positive{
-    height: 25px;
-    font-size: 20px;
-
-  }
+  #navbar button span a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding-right: 15px;
+    font-size: 13px;
+}
+ .experience-tag h5{
+  font-size: 15px;
+ }
+ .experience-tag svg{
+  display: none;
+ }
 }
 @media screen and (max-width: 1500px) {
   .Testimonal span{
@@ -947,24 +939,8 @@ color: rgb(230, 0, 76);
     #milestone{
       height: 600px;
     }
-    .experience-tag{
-          display: none;
-    }
-    .about11 img{
-      position: relative;
-      width: 1000px;
-      height: 200px;
-    }
-    .about12 img{
-      position: absolute;
-      width: 410px;
-    }
-    .about13 img{
-      position: relative;
-      top: 98px;
-      width: 800px;
-      padding-right: 400px;
-      right: 2500px;
-      margin-right: 100px;
-    }
+
+}
+@media screen and (max-width: 428px) {
+  
 }
